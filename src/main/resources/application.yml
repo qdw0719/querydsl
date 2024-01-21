@@ -1,0 +1,25 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:572daea4-dbaf-498d-be69-2b9e8e98c519
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  #  data:
+  #    web:
+  #      pageable:
+  #        default-page-size: 10
+  #        max-page-size: 2000
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+#        show_sql: true
+
+logging.level:
+  org.hibernate.SQL: debug
