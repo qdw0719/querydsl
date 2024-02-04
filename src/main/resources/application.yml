@@ -3,7 +3,8 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:572daea4-dbaf-498d-be69-2b9e8e98c519
+#    url: jdbc:h2:mem:572daea4-dbaf-498d-be69-2b9e8e98c519
+    url: jdbc:h2:tcp://localhost/~/querydsl
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -18,6 +19,7 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
+#        use_sql_comments: true
         format_sql: true
 #        show_sql: true
 
